@@ -1,0 +1,162 @@
+/* Structure */
+
+#header
+{
+	width: 100%; 
+	background-color: #000000;
+	border-top: 2px solid #31274c;	
+}
+
+#navigation
+{
+	width: 100%; 
+	float: left;
+	clear: both;
+	background-color: #000000;
+}
+
+#about
+{
+	clear: both;
+	color: #d5cceb;
+	background-color: #198F66;
+}
+
+#content
+{
+	clear: both;
+	width: 750px;
+	margin: 0 auto;
+	padding: 25px 0; 
+	background-color: #ffffff;
+}
+
+#footer { 
+	color: #fff; 
+	clear: both; 
+	background-color: #000; 
+	padding: 20px 0; 
+	text-align: center; 
+}
+
+/* Header */
+
+#header h1
+{
+	width: 1400px; 
+	height: 100px;
+	margin: 0 auto;
+	background: #000000 url(images/header2.png) top left no-repeat;
+}
+
+#header h1 a
+{
+	height: 100px;
+	display: block;
+	text-indent: -9999px;
+}
+
+/* Navigation */
+
+#navigation ul { 
+	list-style-type: none; 
+	margin: 0 auto; 
+	padding: 0; 
+	width: 850px; 
+}
+
+#navigation li { 
+	float: left; 
+}
+
+#navigation a
+{
+	float: left;
+	display: block;
+	color: #fff;
+	padding: 5px 8px;
+	margin-top: 10px;
+	border-bottom-width: 0;
+}
+
+#navigation li.active a
+{
+	color: #ffffff;
+	background-color: #73698c;
+}
+
+#navigation a:hover, #navigation a:active { 
+	color: #eeeeee; 
+	background-color: #198F66; 
+}
+
+/* About */
+
+#about dl { 
+	margin: 0 auto; 
+	width: 850px; 
+	padding: 20px 0; 
+}
+
+#about dt { 
+	padding: 10px 0; 
+}
+
+#about dd { 
+	padding: 5px 0; 
+	margin-left: 25px; 
+}
+
+#about dt strong { 
+	color: #198F66; 
+}
+
+#about dt em { 
+	padding: 0 2px; 
+}
+
+#about dd a { 
+	margin-left: 25px; 
+}
+
+#about a cite { 
+	border-bottom-width: 0; 
+}
+
+/* Articles */
+#articles {
+	border-style: hidden;
+	border-radius: 25px;
+	padding: 20px;
+}
+
+#firstarticle {
+	border-style: hidden;
+	border-radius: 25px;
+	padding: 20px;
+	margin: 3px 5px 5px 5px;
+}
+
+/* Content */
+
+#content .drop-shadow p { 
+	bottom: 11px; 
+}
+
+/* Footer */
+
+#footer p { 
+	margin: 0 auto; 
+	width: 850px; 
+	padding: 5px 0; 
+}
+
+#footer a { 
+	color: #776d91; 
+	border-bottom-color: #776d91; 
+}
+
+#footer a:hover, #footer a:active { 
+	color: #968ab3; 
+	border-bottom-color: #968ab3; 
+}
