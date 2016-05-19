@@ -28,9 +28,12 @@ var myChart2 = new Chart(ctx, {
    type: 'pie',
    data: {
      labels: ['Red', 'Blue', "Yellow", "Green", "Purple", "Orange"],
+     backgroungColor:["#FF6384", "#36A2EB", "#FFCE56", "#FF6384", "#36A2EB", "#FFCE56"],
      datasets: [{
        label: '# of Votes',
-       data: [12, 19, 3, 5, 2, 3]
+       data: [12, 19, 3, 5, 2, 3],
+       backgroungColor:["#FF6384", "#36A2EB", "#FFCE56", "#FF6384", "#36A2EB", "#FFCE56"],
+       hoverBackgroundColor: ["#FF6384", "#36A2EB", "#FFCE56", "#FF6384", "#36A2EB", "#FFCE56"]
      }]
    },
    options: {
