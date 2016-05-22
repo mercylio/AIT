@@ -1,0 +1,147 @@
+//init.php
+<?php
+session_start(); //should be on inclused every page in init.php
+error_reporting(0);
+
+require 'database/connect.php';
+require 'functions/general.php';
+require 'functions/users.php';
+
+if (logged_in()===true){
+	$session_user_id=$_SESSION['user_id'];
+	$user_data=user_data($session_user_id, 'user_id', 'username', 'password', 'first_name','last_name','email');
+	if(user_active($user_data['username'])===false){
+		session_destroy();
+		header('Location:index.php'); //index.html
+		exit();
+	}
+}
+
+$errors=array();
+?>
+
+
+
+//connect.php
+<?php
+$connect_error='Sorry, connecting issues';
+mysql_connect('localhost','root','') or die(mysql_error($connect error)); //or die is not necessary
+mysql_select_db('obesity_project');
+?>  
+
+
+
+//users.php
+<?php
+function user_data($user_id){
+	$data=array();
+	$user_id=(int)$user_id;
+
+	$func_num_args=func_num_args();
+	$func_get_args=func_get_args();
+
+	if($func_num_args>1){
+		unset($func_get_args[0]);
+
+		$fields=''' . implode('', '', $func_get_args) . ''';
+		$data=mysql_fetch_assoc(mysql_query("SELECT $fields FROM 'users' WHERE 'user_id'=$user_id"));
+
+		return $data;
+	}
+}
+function logged_in(){
+	return (isset($_SESSION['user_id'])) ? true : false;
+}
+function user_exists($username){
+	$username=sanitize($username);
+	return (mysql_result(mysql_query("SELECT COUNT('user_id') FROM 'users' WHERE 'username'='$username'"), 0)==1);
+}
+function user_active($username){
+	$username=sanitize($username);
+	return (mysql_result(mysql_query("SELECT COUNT('user_id') FROM 'users' WHERE 'username'='$username' AND 'active'= 1"), 0)==1) ? true : false;
+}
+function user_id_from_username($username){
+	$username=sanitize($username);
+	return (mysql_result(mysql_query("SELECT 'user_id' FROM 'users' WHERE 'username'='$username'"), 0, 'user_id');
+}
+function user_exists($username){
+	$username=sanitize($username);
+	return (mysql_result(mysql_query("SELECT COUNT('user_id') FROM 'users' WHERE 'username'='$username'"), 0)==1);
+}
+function login($username, $password){
+	$user_id = user_id_from_username($username);
+
+	$username=sanitize($username);
+	$password=md5($password);
+
+	return (mysql_result(mysql_query("SELECT COUNT('user_id') FROM 'users' WHERE 'username'='$username' AND 'password'= "));
+}
+
+?>
+
+
+
+
+//login.php
+<?php
+include 'core/init.php';
+
+if (empty($_POST)===false){
+	$username=$_POST['username'];
+	$password=$_POST['password'];
+
+	if (empty($username)===true || (empty($password)===true){
+		$errors[]='Enter username and password';
+	}
+	else if (user_exists($username)===false){
+		$errors[]='we cannot find this username. have you registered?';
+	}
+	else if (user_active($username)===false){
+		$errors[]='your account isn\'t active';
+	}
+	else{
+
+		if(strlen($username)>32){
+			$errors[]='username too long';
+		} //better as else if
+
+		$login=login($username, $password);
+		if ($login===false){
+			$errors[]='username/password combination incorrect';
+		}else{
+			$_SESSION['user_id']=$login;
+			header('Location: index.php'); //in our case redirect to datasets.html
+			exit();
+		}
+	}
+} else{
+	$errors[]='No data received';
+}
+
+include 'includes/overall/header.php';
+if (empty($errors)===false){
+>?
+	<h2>We tried to log you in but...</h2>
+<?php
+	echo output_errors($errors);
+}
+include 'includes/overall/footer.php';
+?>
+
+
+
+//general.php
+<?php
+function sanitize($data){
+	return mysql_real_escape_string($data);
+}
+
+function output_errors($errors){
+	$output=array();
+	foreach($errors as $error){
+		$output[]='<li>' . $error. '</li>';
+	}
+	return '<ul>' . implode('', $output) . '</ul>';
+}
+
+?>
