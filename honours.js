@@ -3,8 +3,11 @@ var ctx = document.getElementById("myChart");
 var myChart = new Chart(ctx, {
    type: 'bar',
    data: {
+     backgroundColor: ["#FF6384", "#4BC0C0", "#FFCE56", "#E7E9ED", "#36A2EB"],
      labels: ['Red', 'Blue', "Yellow", "Green", "Purple", "Orange"],
      datasets: [{
+      backgroundColor: ["#FF6384", "#4BC0C0", "#FFCE56", "#E7E9ED", "#36A2EB"],
+      hoverBackgroundColor: ["#FF6384", "#36A2EB", "#FFCE56"],
        label: '# of Votes',
        data: [12, 19, 3, 5, 2, 3]
      }]
@@ -29,6 +32,8 @@ var myChart2 = new Chart(ctx, {
    data: {
      labels: ['Red', 'Blue', "Yellow", "Green", "Purple", "Orange"],
      datasets: [{
+      backgroundColor: ["#FF6384", "#4BC0C0", "#FFCE56", "#E7E9ED", "#36A2EB"],
+      hoverBackgroundColor: ["#FF6384", "#36A2EB", "#FFCE56"],
        label: '# of Votes',
        data: [12, 19, 3, 5, 2, 3]
      }]
