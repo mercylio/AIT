@@ -40,7 +40,7 @@ $('.message a').click(function(){
 <style type="text/css">
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
-.login-page {
+.reg-page {
   width: 360px;
   padding: 8% 0 0;
   margin: auto;
@@ -92,7 +92,7 @@ $('.message a').click(function(){
   color: #4CAF50;
   text-decoration: none;
 }
-.form .register-form {
+.form .login-form {
   display: none;
 }
 .container {
@@ -141,14 +141,14 @@ body {
 </style>
 </head>
 <body>
-<div class="login-page">
+<div class="reg-page">
   <div class="form">
     <form class="register-form">
       <input type="text" placeholder="name"/>
       <input type="password" placeholder="password"/>
       <input type="text" placeholder="email address"/>
       <button>create</button>
-      <p class="message">Already registered? <a href="#">Sign In</a></p>
+      <p class="message">Already registered? <a href="login.html">Sign In</a></p>
     </form>
     <div style = "font-size:11px; color:#cc0000; margin-top:10px"><?php echo $error; ?></div>
   </div>

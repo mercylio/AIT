@@ -22,12 +22,35 @@
 	background-color: #198F66;
 }
 
+#newyear
+{
+	clear: both;
+	color: #d5cceb;
+	background-color: #198F66;
+}
+
 #content
 {
 	clear: both;
 	width: 750px;
 	margin: 0 auto;
 	padding: 25px 0; 
+	background-color: #ffffff;
+}
+
+#notes
+{
+	clear: both;
+	color: #d5cceb;
+	background-color: #198F66;
+}
+
+#contact
+{
+	clear: both;
+	width: 750px;
+	margin: 0 auto;
+	padding: 25px 0;
 	background-color: #ffffff;
 }
 
@@ -123,6 +146,39 @@
 	border-bottom-width: 0; 
 }
 
+/* New Year */
+
+#newyear dl { 
+	margin: 0 auto; 
+	width: 850px; 
+	padding: 20px 0; 
+}
+
+#newyear dt { 
+	padding: 10px 0; 
+}
+
+#newyear dd { 
+	padding: 5px 0; 
+	margin-left: 25px; 
+}
+
+#newyear dt strong { 
+	color: #198F66; 
+}
+
+#newyear dt em { 
+	padding: 0 2px; 
+}
+
+#newyear dd a { 
+	margin-left: 25px; 
+}
+
+#newyear a cite { 
+	border-bottom-width: 0; 
+}
+
 /* Articles */
 #articles {
 	border-style: hidden;
@@ -133,8 +189,45 @@
 #firstarticle {
 	border-style: hidden;
 	border-radius: 25px;
+	padding: 5px;
+/*	margin: 3px 5px 5px 5px;*/
+}
+
+#secondarticle {
+	border-style: hidden;
+	border-radius: 25px;
+	padding: 5px;
+/*	margin: 3px 5px 5px 5px;*/
+}
+
+#thirdarticle {
+	border-style: hidden;
+	border-radius: 25px;
+	padding: 5px;
+/*	margin: 3px 5px 5px 5px;*/
+}
+#articlesny {
+	border-style: hidden;
+	border-radius: 25px;
 	padding: 20px;
-	margin: 3px 5px 5px 5px;
+}
+
+#firstarticleny {
+	border-style: hidden;
+	border-radius: 25px;
+	padding: 5px;
+}
+
+#secondarticleny {
+	border-style: hidden;
+	border-radius: 25px;
+	padding: 5px;
+}
+
+#thirdarticleny {
+	border-style: hidden;
+	border-radius: 25px;
+	padding: 5px;
 }
 
 /* Content */
@@ -142,6 +235,41 @@
 #content .drop-shadow p { 
 	bottom: 11px; 
 }
+
+/* Notes */
+
+#notes dl { 
+	margin: 0 auto; 
+	width: 850px; 
+	padding: 20px 0; 
+}
+
+#notes dt { 
+	padding: 10px 0; 
+}
+
+#notes dd { 
+	padding: 5px 0; 
+	margin-left: 25px; 
+}
+
+#notes dt strong { 
+	color: #198F66; 
+}
+
+#notes dt em { 
+	padding: 0 2px; 
+}
+
+#notes dd a { 
+	margin-left: 25px; 
+}
+
+#notes a cite { 
+	border-bottom-width: 0; 
+}
+
+/* Contact */
 
 /* Footer */
 
