@@ -7,6 +7,57 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.0/Chart.min.js"></script>
 <script type="text/javascript" src="caption.js"></script>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script>
+ $(document).ready(function(){
+   $("#firstarticle").hide();
+     $("button.first").click(function(){
+         $("#firstarticle").toggle();
+     });
+ });
+$(document).ready(function(){
+  $("#secondarticle").hide();
+    $("button.second").click(function(){
+        $("#secondarticle").toggle();
+        $("articles").hide();
+    });
+});
+$(document).ready(function(){
+ $("#thirdarticle").hide();
+  $("button.third").click(function(){
+      $("#thirdarticle").toggle();
+    });
+});
+$(document).ready(function(){
+  $("#firstarticleny").hide();
+    $("button.firstny").click(function(){
+        $("#firstarticleny").toggle();
+    });
+});
+$(document).ready(function(){
+  $("#secondarticleny").hide();
+    $("button.secondny").click(function(){
+        $("#secondarticleny").toggle();
+    });
+});
+$(document).ready(function(){
+  $("#thirdarticleny").hide();
+    $("button.thirdny").click(function(){
+        $("#thirdarticleny").toggle();
+    });
+});
+$(document).ready(function(){
+  $("#fourtharticleny").hide();
+    $("button.fourthny").click(function(){
+        $("#fourtharticleny").toggle();
+    });
+});
+$(document).ready(function(){
+  $("#fiftharticleny").hide();
+    $("button.fifthny").click(function(){
+        $("#fiftharticleny").toggle();
+    });
+});
+</script>
 </head>
 <body>
 <div id="header">
@@ -49,16 +100,15 @@
 <div id="content">
   <header>
   <nav class="clear">
-    <div class="drop-shadow"> <a href="#firstarticle"><img src="images/crown2.jpg" width="100" height="70" alt="Honours List 2008[Credit:data.gov.uk]" class="captionated" /></a> </div>
-    <div class="drop-shadow"> <a href="#secondarticle"><img src="images/crown5.jpg" width="100" height="70" alt="Honours List 2009[Credit:data.gov.uk]" class="captionated" /></a> </div>
-    <div class="drop-shadow"> <a href="#thirdarticle"><img src="images/crown4.jpg" width="100" height="70" alt="Honours List 2010[Credit:data.gov.uk]" class="captionated" /></a> </div>
+    <div class="drop-shadow"> <button class="first"> <a href="#firstarticle"><img src="images/crown2.jpg" width="100" height="70" alt="Honours List 2008[Credit:data.gov.uk]" class="captionated" /></a> </button> </div>
+    <div class="drop-shadow"> <button class="second"> <a href="#secondarticle"><img src="images/crown5.jpg" width="100" height="70" alt="Honours List 2009[Credit:data.gov.uk]" class="captionated" /></a> </button> </div>
+    <div class="drop-shadow"> <button class="third"> <a href="#thirdarticle"><img src="images/crown4.jpg" width="100" height="70" alt="Honours List 2010[Credit:data.gov.uk]" class="captionated" /></a> </button> </div>
   </nav></header> <hr /> 
 
   <div> <section id="articles">
     <article id="firstarticle" class="birthday">
       <section class="clear">
         <p>2008</p>
-        <p>Good year. I don't remember it.</p>
         <details>
           <summary>Chart</summary>
            <canvas id="myChart"></canvas>
@@ -70,7 +120,6 @@
     <article id="secondarticle" class="birthday">
       <section class="clear">
         <p>2009</p>
-        <p>Good year. Not really.</p>
         <details>
           <summary>Chart2</summary>
            <canvas id="myChart2"></canvas>
@@ -82,7 +131,6 @@
     <article id="thirdarticle" class="birthday">
       <section class="clear">
         <p>2010</p>
-        <p>Good year. I don't remember it.</p>
         <details>
           <summary>Chart3</summary>
            <canvas id="myChart3"></canvas>
@@ -117,18 +165,17 @@
 <div id="content">
   <header>
   <nav class="clear">
-    <div class="drop-shadow"> <a href="#firstarticle"><img src="images/pic.jpg" width="100" height="70" alt="Honours List 2008[Credit:data.gov.uk]" class="captionated" /></a> </div>
-    <div class="drop-shadow"> <a href="#secondarticle"><img src="images/crown5.jpg" width="100" height="70" alt="Honours List 2009[Credit:data.gov.uk]" class="captionated" /></a> </div>
-    <div class="drop-shadow"> <a href="#thirdarticle"><img src="images/crown4.jpg" width="100" height="70" alt="Honours List 2010[Credit:data.gov.uk]" class="captionated" /></a> </div>
-    <div class="drop-shadow"> <a href="#fourtharticle"><img src="images/crown5.jpg" width="100" height="70" alt="Honours List 2010[Credit:data.gov.uk]" class="captionated" /></a> </div>
-    <div class="drop-shadow"> <a href="#fiftharticle"><img src="images/crown2.jpg" width="100" height="70" alt="Honours List 2010[Credit:data.gov.uk]" class="captionated" /></a> </div>
+    <div class="drop-shadow"> <button class="firstny"> <a href="#firstarticleny"><img src="images/crown2.jpg" width="100" height="70" alt="Honours List 2008[Credit:data.gov.uk]" class="captionated" /></a> </button> </div>
+    <div class="drop-shadow"> <button class="secondny"> <a href="#secondarticleny"><img src="images/crown5.jpg" width="100" height="70" alt="Honours List 2009[Credit:data.gov.uk]" class="captionated" /></a> </button> </div>
+    <div class="drop-shadow"> <button class="thirdny"> <a href="#thirdarticleny"><img src="images/crown4.jpg" width="100" height="70" alt="Honours List 2010[Credit:data.gov.uk]" class="captionated" /></a> </button> </div>
+    <div class="drop-shadow"> <button class="fourthny"> <a href="#fourtharticleny"><img src="images/crown5.jpg" width="100" height="70" alt="Honours List 2010[Credit:data.gov.uk]" class="captionated" /></a> </button> </div>
+    <div class="drop-shadow"> <button class="fifthny"> <a href="#fiftharticleny"><img src="images/crown2.jpg" width="100" height="70" alt="Honours List 2010[Credit:data.gov.uk]" class="captionated" /></a> </button> </div>
   </nav></header> <hr /> 
 
   <div> <section id="articlesny">
     <article id="firstarticleny" class="newyear">
       <section class="clear">
         <p>2008</p>
-        <p>Good year. I don't remember it.</p>
         <details>
           <summary>Chart</summary>
            <canvas id="myChart4"></canvas>
@@ -140,7 +187,6 @@
     <article id="secondarticleny" class="newyear">
       <section class="clear">
         <p>2009</p>
-        <p>Good year. Not really.</p>
         <details>
           <summary>Chart2</summary>
            <canvas id="myChart5"></canvas>
@@ -152,10 +198,31 @@
     <article id="thirdarticleny" class="newyear">
       <section class="clear">
         <p>2010</p>
-        <p>Good year. I don't remember it.</p>
         <details>
           <summary>Chart3</summary>
            <canvas id="myChart6"></canvas>
+            </script>
+          </details>
+        </section>
+      </article>
+
+      <article id="fourtharticleny" class="newyear">
+      <section class="clear">
+        <p>2010</p>
+        <details>
+          <summary>Chart4</summary>
+           <canvas id="myChart7"></canvas>
+            </script>
+          </details>
+        </section>
+      </article>
+
+      <article id="fiftharticleny" class="newyear">
+      <section class="clear">
+        <p>2010</p>
+        <details>
+          <summary>Chart5</summary>
+           <canvas id="myChart8"></canvas>
             </script>
           </details>
         </section>
