@@ -1,0 +1,26 @@
+INSERT INTO `USERS`.`Users` (
+`ID` ,
+`Email` ,
+`Password` ,
+`Name` ,
+`Surname` ,
+`Organization` ,
+`Address` ,
+`Country`
+)
+VALUES (
+'2', 'mercy@test.com', '123456', 'Mercy', 'Lio', 'UNIBZ', 'piazza Gries 19', 'Kenya'
+);
+
+
+INSERT INTO `USERS`.`Users` (
+`Email` ,
+`Password` ,
+`Name` ,
+`Surname` ,
+`Organization` ,
+`Address` ,
+`Country`
+)
+VALUES ('test@test.com', '123456', 'Admin', 'Super', 'UNIBZ', 'piazza Gries 19', 'Gries'
+);

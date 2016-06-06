@@ -1,0 +1,12 @@
+INSERT INTO `USERS`.`Users` (
+`Email` ,
+`Password` ,
+`Name` ,
+`Surname` ,
+`Organization` ,
+`Address` ,
+`Country`
+)
+VALUES (
+'email@test.com', '123456', 'Name', 'Surname', 'Organization', 'Address 123', 'Country'
+);
