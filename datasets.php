@@ -1,7 +1,9 @@
 <?php
+include 'session_handler.php';
 // gather data
  require("connect.php");
 ?>
+<!DOCTYPE html>
 <html>
 <head>
 <title>ProjectData by STANLIO</title>
@@ -20,34 +22,46 @@
         <h2><strong>Honours Open Data</strong> is a dataset provider</h2>
         <p>Brought to you by StanLio</p>
         <ul class="actions">
-          <li><a href="index2.php" class="button special">Get started</a></li>
+          <li><?php
+            echo "Welcome back, ".$_SESSION["username"]."!";
+          ?>
+          </li>
         </ul>
       </section>
 
 <div id="navigation">
   <ul>
-    <li><a href="index2.php">Home</a></li>
+    <li><a href="index.php">Home</a></li>
     <li><a href="#about">Birthday Honours</a></li>
     <li><a href="#newyear">New Years' Honours</a></li>
     <li><a href="#notes">About Us</a></li>
   </ul>
   <ul class="reg">
     <li><a href="login.php">Login</a></li>
+    <?php
+      if($_SESSION["username"] != "anonymous_user"){
+        Print "
+        <li><a href='logout.php'>Logout</a></li>";
+      }
+    ?>
     <li><a href="register.php">Register</a></li>
     
   </ul>
 </div> 
 
-
 <div id="about">
   <dl><p>Birthday Honours</p>
-  <p>Click the images to view more.</p>
   <details>
-  <summary>This report contains birthday Honours of the following years: ...</summary>
+  <summary>This report contains Birthday Honours of the following years: ...</summary>
   <ul>
     <li>2008</li>
     <li>2009</li>
     <li>2010</li>
+    <li>2011</li>
+    <li>2012</li>
+    <li>2013</li>
+    <li>2014</li>
+    <li>2015</li>
   </ul>
   <p>There are also other hounours available, <a href="#newyear">New Years' Honours</a></p>
   <ul>
@@ -56,7 +70,10 @@
   <li>2010</li>
   <li>2011</li>
   <li>2012</li>
-  <li>2013</li></ul>
+  <li>2013</li>
+  <li>2014</li>
+  <li>2015</li>
+  </ul>
   </details></dl>
 </div>
 
@@ -150,7 +167,6 @@
               </div>
 <div id="newyear">
   <dl><p>New Years' Honours</p>
-  <p>Click the images to view more.</p>
   <details>
   <summary>This report contains New Years' Honours of the following years: ...</summary>
   <ul>
@@ -160,12 +176,19 @@
     <li>2011</li>
     <li>2012</li>
     <li>2013</li>
+    <li>2014</li>
+    <li>2015</li>
   </ul>
   <p>There are also other hounours available, <a href="#about">Birthday Honours</a></p>
   <ul>
     <li>2008</li>
     <li>2009</li>
     <li>2010</li>
+    <li>2011</li>
+    <li>2012</li>
+    <li>2013</li>
+    <li>2014</li>
+    <li>2015</li>
   </ul>
   </details></dl>
 </div>
@@ -258,7 +281,7 @@
               </div>
 
 <div id="notes">
-  <dl><p>About AlMeBO</p>
+  <dl><p>About StanLio</p>
   <p>We are a service provider that offers some specialized information in the form of a dataset.</p>
   <p>The reports we bring contain lists of the Royal Queens Honours of a number of years: </p>
   <p>We offer a list of:</p>

@@ -1,4 +1,3 @@
-// connect.php
 <?php
 $server = "localhost";
 $username = "root";
@@ -10,7 +9,7 @@ $con = new mysqli($server, $username, $password);
 if($con -> connect_error){
 	die("Failed to Connect");
 }
-echo "Connection Successful";
+//echo "Connection Successful";
 
 
 // Select the data base
