@@ -52,7 +52,7 @@ require("connect.php");
 						<div class="feature">
 							<i class="fa fa-copy"></i>
 							<a href="login.php"><h3>Get a copy</h3></a>
-							<p>Download a Copy of this information. (Login First).</p>
+							<p>Download a Copy of this information. (You Must Login First).</p>
 						</div>
 						<div class="feature">
 							<i class="fa fa-envelope-o"></i>
