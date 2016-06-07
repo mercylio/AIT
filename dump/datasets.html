@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Our Project AlMeBO</title>
+
+<link rel="stylesheet" type="text/css" media="screen,projection" href="master.css" />
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.0/Chart.min.js"></script>
+<script type="text/javascript" src="caption.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script>
+ $(document).ready(function(){
+   $("#firstarticle").hide();
+     $("button.first").click(function(){
+         $("#firstarticle").toggle();
+     });
+ });
+$(document).ready(function(){
+  $("#secondarticle").hide();
+    $("button.second").click(function(){
+        $("#secondarticle").toggle();
+        $("articles").hide();
+    });
+});
+$(document).ready(function(){
+ $("#thirdarticle").hide();
+  $("button.third").click(function(){
+      $("#thirdarticle").toggle();
+    });
+});
+$(document).ready(function(){
+  $("#firstarticleny").hide();
+    $("button.firstny").click(function(){
+        $("#firstarticleny").toggle();
+    });
+});
+$(document).ready(function(){
+  $("#secondarticleny").hide();
+    $("button.secondny").click(function(){
+        $("#secondarticleny").toggle();
+    });
+});
+$(document).ready(function(){
+  $("#thirdarticleny").hide();
+    $("button.thirdny").click(function(){
+        $("#thirdarticleny").toggle();
+    });
+});
+$(document).ready(function(){
+  $("#fourtharticleny").hide();
+    $("button.fourthny").click(function(){
+        $("#fourtharticleny").toggle();
+    });
+});
+$(document).ready(function(){
+  $("#fiftharticleny").hide();
+    $("button.fifthny").click(function(){
+        $("#fiftharticleny").toggle();
+    });
+});
+</script>
+</head>
+<body>
+<div id="header">
+  <h1><a href="index.html" title="Go Home" rel="bookmark">Home</a></h1>
+</div>
+<div id="navigation">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="#about">Information</a></li>
+    <li><a href="#content">Our Portfolio</a></li>
+    <li><a href="#notes">About Us</a></li>
+    <li><a href="#contact">Contact Us</a></li>
+  </ul>
+  <ul class="reg">
+    <li><a href="login.html">Login</a></li>
+    <li><a href="reg.html">Register</a></li>
+    
+  </ul>
+</div>
+<div id="about">
+  <dl><p>Birthday Honours</p>
+  <p>Click the images to view more.</p>
+  <details>
+  <summary>This report contains birthday Honours of the following years: ...</summary>
+  <ul>
+    <li>2008</li>
+    <li>2009</li>
+    <li>2010</li>
+  </ul>
+  <p>There are also other hounours available, <a href="#newyear">New Years' Honours</a></p>
+  <ul>
+    <li>2008</li>
+   <li>2009</li>
+  <li>2010</li>
+  <li>2011</li>
+  <li>2012</li>
+  <li>2013</li></ul>
+  </details></dl>
+</div>
+<div id="content">
+  <header>
+  <nav class="clear">
+    <div class="drop-shadow"> <button class="first"> <a href="#firstarticle"><img src="images/crown2.jpg" width="100" height="70" alt="Honours List 2008[Credit:data.gov.uk]" class="captionated" /></a> </button> </div>
+    <div class="drop-shadow"> <button class="second"> <a href="#secondarticle"><img src="images/crown5.jpg" width="100" height="70" alt="Honours List 2009[Credit:data.gov.uk]" class="captionated" /></a> </button> </div>
+    <div class="drop-shadow"> <button class="third"> <a href="#thirdarticle"><img src="images/crown4.jpg" width="100" height="70" alt="Honours List 2010[Credit:data.gov.uk]" class="captionated" /></a> </button> </div>
+  </nav></header> <hr /> 
+
+  <div> <section id="articles">
+    <article id="firstarticle" class="birthday">
+      <section class="clear">
+        <p>2008</p>
+        <details>
+          <summary>Chart</summary>
+           <canvas id="myChart"></canvas>
+            </script>
+          </details>
+        </section>
+      </article>
+
+    <article id="secondarticle" class="birthday">
+      <section class="clear">
+        <p>2009</p>
+        <details>
+          <summary>Chart2</summary>
+           <canvas id="myChart2"></canvas>
+             <script src="honours.js"></script>
+          </details>
+        </section>
+      </article>
+
+    <article id="thirdarticle" class="birthday">
+      <section class="clear">
+        <p>2010</p>
+        <details>
+          <summary>Chart3</summary>
+           <canvas id="myChart3"></canvas>
+            </script>
+          </details>
+        </section>
+      </article>
+</section></div>
+</div>
+
+<div id="newyear">
+  <dl><p>New Years' Honours</p>
+  <p>Click the images to view more.</p>
+  <details>
+  <summary>This report contains New Years' Honours of the following years: ...</summary>
+  <ul>
+    <li>2008</li>
+    <li>2009</li>
+    <li>2010</li>
+    <li>2011</li>
+    <li>2012</li>
+    <li>2013</li>
+  </ul>
+  <p>There are also other hounours available, <a href="#about">Birthday Honours</a></p>
+  <ul>
+    <li>2008</li>
+    <li>2009</li>
+    <li>2010</li>
+  </ul>
+  </details></dl>
+</div>
+<div id="content">
+  <header>
+  <nav class="clear">
+    <div class="drop-shadow"> <button class="firstny"> <a href="#firstarticleny"><img src="images/crown2.jpg" width="100" height="70" alt="Honours List 2008[Credit:data.gov.uk]" class="captionated" /></a> </button> </div>
+    <div class="drop-shadow"> <button class="secondny"> <a href="#secondarticleny"><img src="images/crown5.jpg" width="100" height="70" alt="Honours List 2009[Credit:data.gov.uk]" class="captionated" /></a> </button> </div>
+    <div class="drop-shadow"> <button class="thirdny"> <a href="#thirdarticleny"><img src="images/crown4.jpg" width="100" height="70" alt="Honours List 2010[Credit:data.gov.uk]" class="captionated" /></a> </button> </div>
+    <div class="drop-shadow"> <button class="fourthny"> <a href="#fourtharticleny"><img src="images/crown5.jpg" width="100" height="70" alt="Honours List 2010[Credit:data.gov.uk]" class="captionated" /></a> </button> </div>
+    <div class="drop-shadow"> <button class="fifthny"> <a href="#fiftharticleny"><img src="images/crown2.jpg" width="100" height="70" alt="Honours List 2010[Credit:data.gov.uk]" class="captionated" /></a> </button> </div>
+  </nav></header> <hr /> 
+
+  <div> <section id="articlesny">
+    <article id="firstarticleny" class="newyear">
+      <section class="clear">
+        <p>2008</p>
+        <details>
+          <summary>Chart</summary>
+           <canvas id="myChart4"></canvas>
+            </script>
+          </details>
+        </section>
+      </article>
+
+    <article id="secondarticleny" class="newyear">
+      <section class="clear">
+        <p>2009</p>
+        <details>
+          <summary>Chart2</summary>
+           <canvas id="myChart5"></canvas>
+             <script src="honours.js"></script>
+          </details>
+        </section>
+      </article>
+
+    <article id="thirdarticleny" class="newyear">
+      <section class="clear">
+        <p>2010</p>
+        <details>
+          <summary>Chart3</summary>
+           <canvas id="myChart6"></canvas>
+            </script>
+          </details>
+        </section>
+      </article>
+
+      <article id="fourtharticleny" class="newyear">
+      <section class="clear">
+        <p>2010</p>
+        <details>
+          <summary>Chart4</summary>
+           <canvas id="myChart7"></canvas>
+            </script>
+          </details>
+        </section>
+      </article>
+
+      <article id="fiftharticleny" class="newyear">
+      <section class="clear">
+        <p>2010</p>
+        <details>
+          <summary>Chart5</summary>
+           <canvas id="myChart8"></canvas>
+            </script>
+          </details>
+        </section>
+      </article>
+</section></div>
+</div>
+
+<div id="notes">
+  <dl><p>About AlMeBO</p>
+  <p>We are a service provider that offers some specialized information in the form of a dataset.</p>
+  <details>
+  <summary>The reports we bring contain lists of the Royal Queens Honours of a number of years: ...</summary>
+  <p>We offer a list of:</p>
+  <ul>
+    <li>Birthday Honors presented by the Queen.</li>
+    <li>New Years Honors also presented by the Queen on the dawn of a new year.</li>
+  </ul>
+
+  <?php
+require 'connect.php';
+$result = mysqli_query($con, 'select * from product');
+?>
+<table cellpadding="2" cellspacing="2" border="0">
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Price</th>
+    <th>Buy</th>
+  </tr>
+  <?php while($product = mysqli_fetch_object($result)){ ?>
+    <tr>
+      <td><?php echo $product->id; ?></td>
+      <td><?php echo $product->name; ?></td>
+      <td><?php echo $product->price; ?></td>
+      <td><a href="cart.php?id= <?php echo $product->id; ?>">Order Now</a></td>
+    </tr>
+  <?php } ?>
+</table>
+
+</div>
+
+<div id="contact">
+  <dl>
+  <details>
+  <summary>Contact us on ...</summary>
+  <ul>
+    <li><p><i class="fa fa-phone"><span> +39 32 1123 3211</span></i></p></li>
+    <li><p><i class="fa fa-envelope"><span> info@thequeensdataset.it</span></i></p></li>
+    <li><p><i class="fa fa-print"><span> +39 32 1123 3213</span></i></p></li>
+  </ul>
+</div>
+
+<div id="footer">
+  <p>We did a thing </p>
+  <p>Hope you're happy</p>
+  <p><a href="https://data.gov.uk/dataset/statistics_on_obesity_physical_activity_and_diet_england">We deserve a perfect score</a></p> 
+</div>
+<div align=center>This website is a lie...</a></div>
+
+</body>
+<script src="honours.js">
+</html>
