@@ -2,7 +2,7 @@
 <?php
 $server = "localhost";
 $username = "root";
-$password = "";
+$password = "password";
 
 // $con = mysql_connect('localhost', 'root', '');
 $con = new mysqli($server, $username, $password);
@@ -28,10 +28,10 @@ $chart = 1;
 $labels[$chart] = array();
 for ($chart = 1; $chart<=16;$chart++) {
 	if ($chart <= 8){
-		$yr = "bd" . ($chart + 2007);
+		$yr = "BD" . ($chart + 2007);
 	}
 	else {
-		$yr = "ny" . ($chart + 1999);
+		$yr = "NY" . ($chart + 1999);
 	}
 	$query = "SELECT COUNT(*) as No,Award FROM $yr group by Award ORDER BY Award asc;";
 	$result = mysqli_query( $con, $query );

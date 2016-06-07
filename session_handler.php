@@ -12,7 +12,9 @@ if (!isset($_SESSION["shopping_cart"])){
 	$_SESSION["shopping_cart"] = 0;
 }
 
-
+function display_username(){
+	return $_SESSION["username"];
+}
 
 //$_SESSION = array ();
 //session_unset();

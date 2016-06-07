@@ -37,6 +37,7 @@ else {
 echo "<h1>".$_SESSION["login"]."</h1><br>";
 echo "<h1>".$_SESSION["username"]."</h1><br>";
 echo "<h1>".$_SESSION["shopping_cart"]."</h1><br>";
+echo "<h1> USERNAME: ".display_username()."</h1>";
 ?>
 
 
@@ -50,7 +51,7 @@ echo "<h1>".$_SESSION["shopping_cart"]."</h1><br>";
 
 <!-- 
 
-
+TODO: 
 
 
 
