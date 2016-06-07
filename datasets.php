@@ -4,7 +4,7 @@
 ?>
 <html>
 <head>
-<title>App by STANLIO</title>
+<title>ProjectData by STANLIO</title>
 
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -17,7 +17,7 @@
 <body>
   <!-- Banner -->
       <section id="banner">
-        <h2><strong>Our App</strong> is a dataset provider</h2>
+        <h2><strong>Honours Open Data</strong> is a dataset provider</h2>
         <p>Brought to you by StanLio</p>
         <ul class="actions">
           <li><a href="index2.php" class="button special">Get started</a></li>
@@ -26,7 +26,7 @@
 
 <div id="navigation">
   <ul>
-    <li><a href="index.php">Home</a></li>
+    <li><a href="index2.php">Home</a></li>
     <li><a href="#about">Birthday Honours</a></li>
     <li><a href="#newyear">New Years' Honours</a></li>
     <li><a href="#notes">About Us</a></li>
@@ -268,12 +268,11 @@
   </ul>
 </div>
 
-<div id="footer">
-  <p>We did a thing </p>
-  <p>Hope you're happy</p>
-  <p><a href="https://data.gov.uk/dataset/honours_list">We deserve a perfect score</a></p> 
-</div>
-<div align=center>This website is a lie...</div>
+<footer id="footer">
+        <div class="copyright">
+          &copy; DataSets. By: <a href="https://data.gov.uk/dataset/honours-lists/">DATA.GOV.UK</a>.
+        </div>
+      </footer>
 
 </body> 
 <script>

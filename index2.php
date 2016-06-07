@@ -4,7 +4,7 @@ require("connect.php");
 ?>
 <html>
 	<head>
-		<title>App by STANLIO</title>
+		<title>ProjectData by STANLIO</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="css/main.css" />
@@ -17,7 +17,7 @@ require("connect.php");
 
 		<!-- Banner -->
 			<section id="banner">
-				<h2><strong>Our App</strong> is a dataset provider</h2>
+				<h2><strong>Honours Open Data</strong> is a dataset provider</h2>
 				<p>Brought to you by StanLio</p>
 				<ul class="actions">
 					<li><a href="datasets.php" class="button special">Get started</a></li>
@@ -51,8 +51,8 @@ require("connect.php");
 						</div>
 						<div class="feature">
 							<i class="fa fa-copy"></i>
-							<a href="login.html"><h3>Get a copy</h3></a>
-							<p>Download a Copy of this CRAP.</p>
+							<a href="login.php"><h3>Get a copy</h3></a>
+							<p>Download a Copy of this information. (Login First).</p>
 						</div>
 						<div class="feature">
 							<i class="fa fa-envelope-o"></i>
@@ -194,8 +194,9 @@ require("connect.php");
  								</dd>
 							</dl>
 
-							<h3>Blockquote</h3>
-							<blockquote>Nobodr really cares about this. Just trying to fulfill the requirement for this stinking course. - Andrew James.</blockquote>
+							<!-- <h3>Blockquote</h3>
+							<blockquote>The Queens' List. - Andrew James.</blockquote> -->
+		
 		<!-- Footer -->
 			<footer id="footer">
 				<div class="copyright">
