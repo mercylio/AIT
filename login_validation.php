@@ -47,7 +47,7 @@ include 'session_handler.php';
 			$_SESSION["username"] = $_POST['email'];
 			$_SESSION["login"] = 1;
 			$_SESSION["shopping_cart"] = 0;
-			header("Location: index.php");
+			header("Location: datasets.php");
 			exit;
 
 		}
@@ -69,9 +69,6 @@ include 'session_handler.php';
 		}*/
 	}
 }
-
-
-
       	
 	?>
     </form>

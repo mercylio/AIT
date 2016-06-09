@@ -111,16 +111,12 @@ include 'session_handler.php';
 			//echo $_SESSION["login"];
 			//echo $_SESSION["shopping_cart"];
 
+			}
 		}
 	}
-}
-
-
-
-      	
-	?>
-    </form>
-  </div>
+?>
+</form>
+</div>
 </div>
 </body>
 </html>

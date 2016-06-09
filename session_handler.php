@@ -8,8 +8,9 @@ if (!isset($_SESSION["username"])){
 if (!isset($_SESSION["login"])){
 	$_SESSION["login"] = 0;
 }
-if (!isset($_SESSION["shopping_cart"])){
-	$_SESSION["shopping_cart"] = 0;
+
+if(empty($_SESSION["shopping_cart"])){
+		$_SESSION["shopping_cart"] = array();
 }
 
 function display_username(){

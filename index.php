@@ -1,46 +1,21 @@
 <?php
 include 'session_handler.php';
 
-
-if (isset($_GET["login"]) && ($_GET["login"] == "login")){
-	$_SESSION["login"] = 1;
-}
-if (isset($_GET["login"]) && ($_GET["login"] == "logout")){
-	$_SESSION["login"] = 0;
-}
-
-/*
-//if user is logged in, display name
-if(isset($_SESSION["username"])){ //check also $_SESSION["login"] ?
-
-	//display name somewhere in the page
-
-}
-//else, session_start();
-else {
-	session_start();
-	$_SESSION["login"] = 0;
-}
-*/
-
-?>
-<?php
 require("connect.php");
 ?>
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<title>ProjectData by STANLIO</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="css/main.css" />
-		<link rel="stylesheet" type="text/css" media="screen,projection" href="css/master.css" />
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.0/Chart.min.js"></script>
-		<script type="text/javascript" src="caption.js"></script>
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<head>
+<title>ProjectData by STANLIO</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="css/main.css" />
+<link rel="stylesheet" type="text/css" media="screen,projection" href="css/master.css" />
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.0/Chart.min.js"></script>
+<script type="text/javascript" src="caption.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
 </head>
 <body>
-
 	<!-- Banner -->
 		<section id="banner">
 			<h2><strong>Honours Open Data</strong> is a dataset provider</h2>
@@ -49,9 +24,6 @@ require("connect.php");
 				<li><a href="datasets.php" class="button special">Get started</a></li>
 			</ul>
 		</section>
-
-		
-
 	<!-- One -->
 		<section id="one" class="wrapper special">
 			<div class="inner">
@@ -137,62 +109,55 @@ require("connect.php");
 <p>The honours system recognizes people who have made achievements in public life or committed themselves to serving and helping Britain. They will usually have been outstanding at what they do.</p>
 </dl>
 						</div>
-					<div class="6u$ 12u$(small)">
-						<h3>More Details</h3>
+<div class="6u$ 12u$(small)">
+<h3>More Details</h3>
 <dl>
 <p>This report contains some parts which consist of the following:</p>
 <ul>
  <li>New Year Honours: Honours have been awarded at New Year since at least 1890, in which year a list of Queen Victoria's awards was published by the London Gazette on 2 January.</li>
-
  <li>Birthday Honours: Birthday Honours are part of the celebration of the reigning monarch's official birthday in each realm. The awards are presented by the reigning monarch or head of state, currently Queen Elizabeth II, or her deputy.
 	 Known as Queen's Birthday Honours (and King's Birthday Honours in times of a male monarch), all royal honours are published in the London Gazette, Canada Gazette, Commonwealth of Australia Gazette and New Zealand Gazette. The lists are also published in the daily newspapers of each realm.
 	 Honours have been awarded on the monarch's birthday since at least 9 November 1901, the birthday of King Edward VII (r. 1901–1910).[3][4] After 1908 the monarch's official birthday was moved to the first, second or third Saturday in June (for the UK). Other Commonwealth realms celebrate the official birthday on different dates (generally late May or early June), and release their honours lists accordingly.</li></ul>
 </dl>
-						</div>
-				</div>
-						<h4>There are also other Honours available (Not part of this data set)</h4>
-						<dl>
-							<dt>Item 1</dt>
-							<dd>
-								<p>Australia Day Honours: The Australia Day honours were established in 1975 to replace the New Year honours in Australia. The list is issued on 26 January every year.</p>
-							</dd>
-							<dt>Item 2</dt>
-							<dd>
-								<p>Prime Minister's Resignation Honours: Honours granted at the behest of an outgoing Prime Minister following his or her resignation. In such a list, a Prime Minister may ask the monarch to bestow peerages, or other lesser honours, on any number of people of his or her choosing.</p>
-								</dd>
-							<dt>Item 3</dt>
-							<dd>
-								<p>Coronation Honours: Coronation honours, are awarded by the sovereign to mark their coronation. The honours are usually those within the sovereign personal gift.</p>
-								</dd>
-								<dt>Item 4</dt>
-								<dd>
-									<p>Dissolution Honours: The Dissolution Honours List, lists those individuals receiving Honours from the Monarch at a time following the Dissolution of the United Kingdom Parliament.</p> 								
-								</dd>	
-								<dt>Item 5</dt>
-								<dd>
-									<p>Bravery Council Honours: Bravery council honours lists recipients of Australian bravery honours. The lists are issued twice a year in March and August respectively.</p>
-								</dd>
-								<dt>Item 6</dt>
-								<dd>
-									<p>Special Honours: Special honours, are lists issued at random points throughout the year. Australia and the United Kingdom both issue Special honours.</p>
-								</dd>
-						</dl>
-
-						<!-- <h3>Blockquote</h3>
-						<blockquote>The Queens' List. - Andrew James.</blockquote> -->
-	
-	<!-- Footer -->
-		<footer id="footer">
-			<div class="copyright">
-				&copy; DataSets. By: <a href="https://data.gov.uk/dataset/honours-lists/">DATA.GOV.UK</a>.
-			</div>
-		</footer>
-
-	<!-- Scripts -->
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/skel.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
-
+	</div>
+</div>
+<h4>There are also other Honours available (Not part of this data set)</h4>
+<dl>
+	<dt>Item 1</dt>
+	<dd>
+		<p>Australia Day Honours: The Australia Day honours were established in 1975 to replace the New Year honours in Australia. The list is issued on 26 January every year.</p>
+	</dd>
+	<dt>Item 2</dt>
+	<dd>
+		<p>Prime Minister's Resignation Honours: Honours granted at the behest of an outgoing Prime Minister following his or her resignation. In such a list, a Prime Minister may ask the monarch to bestow peerages, or other lesser honours, on any number of people of his or her choosing.</p>
+		</dd>
+	<dt>Item 3</dt>
+	<dd>
+		<p>Coronation Honours: Coronation honours, are awarded by the sovereign to mark their coronation. The honours are usually those within the sovereign personal gift.</p>
+		</dd>
+		<dt>Item 4</dt>
+		<dd>
+			<p>Dissolution Honours: The Dissolution Honours List, lists those individuals receiving Honours from the Monarch at a time following the Dissolution of the United Kingdom Parliament.</p> 								
+		</dd>	
+		<dt>Item 5</dt>
+		<dd>
+			<p>Bravery Council Honours: Bravery council honours lists recipients of Australian bravery honours. The lists are issued twice a year in March and August respectively.</p>
+		</dd>
+		<dt>Item 6</dt>
+		<dd>
+			<p>Special Honours: Special honours, are lists issued at random points throughout the year. Australia and the United Kingdom both issue Special honours.</p>
+		</dd>
+</dl>
+<!-- Footer -->
+<footer id="footer">
+	<div class="copyright">
+		&copy; DataSets. By: <a href="https://data.gov.uk/dataset/honours-lists/">DATA.GOV.UK</a>.
+	</div>
+</footer>
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/skel.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
 </body>
 </html>

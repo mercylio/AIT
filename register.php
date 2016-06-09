@@ -27,7 +27,6 @@ email: bad format / empty
       </p>      
       <p>
         <input type="password" placeholder="password" name="password" data-validation="strength" data-validation-strength="2"/>
-        <!-- <input type="password" placeholder="password" name="pass_confirmation" data-validation="strength" data-validation-strength="2"/> -->
       </p>
       <p>
         <input type="text" placeholder="name" name="name" data-validation="length" data-validation-length="2-128"/>
@@ -47,15 +46,6 @@ email: bad format / empty
       <!--<button type="submit">register</button>-->      
       <input type="submit" name="submitreg" value="Create" id="regsubmission"/>
       
-      <!-- 
-      on BUTTON click:
-      1(validation): 
-        LVL1: che  
-
-      2(session destroy + session start)
-      3 (if user doesn't exists yet, MySQL insert; else - USER EXISTS msg)
-      4 (if everything wents smooth, go to downloads.php or homepage)
-      -->
       <p class="message">Already registered? <a href="login.php">Sign In</a></p><br>
       <p class='messagehome'>Or return to <a href='index.php'>HOME PAGE</a></p>
     </form>
@@ -70,8 +60,6 @@ email: bad format / empty
         $('#country').suggestCountry();
       }
     });
-    // Restrict presentation length
-    //$('#presentation').restrictLength( $('#pres-max-length') );
     </script>
   </div>
 </div>

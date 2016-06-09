@@ -2,7 +2,7 @@
 
 include 'session_handler.php';
 
-// change the value of $dbuser and $dbpass to your username and password
+// PAY ATTENTION to the value of $dbuser and $dbpass: it must match machine's DB username and password
 $dbhost = "localhost";
 $dbuser = "root";
 $dbpass = "password";
